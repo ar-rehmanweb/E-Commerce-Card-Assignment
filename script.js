@@ -38,7 +38,8 @@ var p2 = new Product(
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nkIKdeN_AbywvZlRBnOfOAUnGFImMEINHQ&s",
   "Dell XPS 15",
   "InfinityEdge layout for boundless creativity.",
-  410000,
+  4
+  10000,
   190,
   1202,
   [
