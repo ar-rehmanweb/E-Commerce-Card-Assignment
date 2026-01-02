@@ -124,7 +124,7 @@ body {
     border-color: var(--accent-color);
 }
 
-
+/* Modal Styling */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -204,7 +204,7 @@ body {
 }
 
 .review-item {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05); /* Slight lighter bg for items */
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;

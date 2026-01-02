@@ -38,8 +38,7 @@ var p2 = new Product(
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nkIKdeN_AbywvZlRBnOfOAUnGFImMEINHQ&s",
   "Dell XPS 15",
   "InfinityEdge layout for boundless creativity.",
-  4
-  10000,
+  410000,
   190,
   1202,
   [
@@ -85,7 +84,7 @@ for (var i = 0; i < products.length; i++) {
   var p = products[i];
   prodGrid.innerHTML += `<div class="prod-card">
             <div class="bg-image" style="background-image: url('${p.image}')">
-
+                <!-- bg image -->
             </div>
             <h3>${p.title}</h3>
             <p class="desc">${p.desc}</p>
