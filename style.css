@@ -1,0 +1,228 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #ffffff;
+    --card-border: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.prod-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.prod-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prod-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.bg-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+.prod-card:hover .bg-image {
+    opacity: 0.9;
+}
+
+.prod-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.prod-card .desc {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.prod-card .price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.likes-reviews-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--card-border);
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+.view-reviews-btn {
+    background: transparent;
+    border: 1px solid #a0a0a0;
+    color: #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.view-reviews-btn:hover {
+    background: var(--accent-color);
+    color: #000;
+    border-color: var(--accent-color);
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    padding: 20px;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 10px;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid var(--card-border);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.modal-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.modal-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.modal-info h2 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.modal-info p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #b0b0b0;
+}
+
+.modal-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.reviews-section h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.review-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.review-rating {
+    color: orange;
+}
+
+.review-comment {
+    font-style: italic;
+    color: #b0b0b0;
+}
